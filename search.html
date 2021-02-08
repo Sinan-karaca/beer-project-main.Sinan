@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Search Beer info</title>
+    <script src="search.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="logo.jpg" alt="logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="search.html">Search Beer</a>
+        </nav>
+    </div>
+    <h2>Search For a beer</h2>
+    <div id="containerz" class="container">
+
+        <form id="form">
+            <input type="text" id="searchFnc" name="search" placeholder="Search..">
+            <label for="">Hops</label>
+            <input type="text" name="input" placeholder="hops">
+            <label for="">Malt</label>
+            <input type="text" name="input" placeholder="Malt">
+            <label for="">Brewed Before</label>
+            <input type="text" name="input" placeholder="MM-YYYY">
+            <label for="">Brewed After</label>
+            <input type="text" name="input" placeholder="MM-YYYY">
+            <label for="">ABV lesser than</label>
+            <input type="text" name="input" placeholder="Num">
+            <label for="">ABV Greater than</label>
+            <input type="text" name="input" placeholder="Num">
+            <button id="searchBtn" class="searchBtn">Search</button>
+        </form>
+
+        <div id="searchResults">
+
+        </div>
+        <div id="btn">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" id="left-arrow">
+                <path fill-rule="evenodd"
+                    d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z" />
+            </svg>
+            <span id="page"></span>
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" id="right-arrow">
+                <path fill-rule="evenodd"
+                    d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

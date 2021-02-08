@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Wiki Beer</title>
+</head>
+
+<body>
+    <div class="container">
+            <img src="logo.jpg" alt="logo" class="logo">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                    <a href="index.html">Home</a>
+                    <a href="search.html">Search Beer</a>
+            </nav>
+        <section>
+            <img src="beer.jpg" alt="header" class="headerimg">
+            <h1>Beer info for the people.</h1>
+            <p class="welcome-txt">Here you will get the powerfull information about every beer in the world</p>
+        </section>
+    </div>
+    <div class="blue-container">
+        <div class="container">
+            <input type="hidden" id="show" value="1">
+            <ul id="list">
+                <div id="1">
+                    <img src="img/1.jpg">
+                </div>
+                <div id="2" style="display: none">
+                    <img src="img/2.jpg">
+                </div>
+                <div id="3" style="display: none">
+                    <img src="img/3.jpg">
+                </div>
+                <div id="4" style="display: none">
+                    <img src="img/4.jpg">
+                </div>
+                <div id="5" style="display: none">
+                    <img src="img/5.jpg">
+                </div>
+                <div id="6" style="display: none">
+                    <img src="img/6.jpg">
+                </div>
+                <div id="7" style="display: none">
+                    <img src="img/7.jpg">
+                </div>
+                <div id="8" style="display: none">
+                    <img src="img/8.jpg">
+                </div>
+                <div id="9" style="display: none">
+                    <img src="img/9.jpg">
+                </div>
+                <div id="10" style="display: none">
+                    <img src="img/10.jpg">
+                </div>
+            </ul>
+            <div class="pagination">
+                <a onclick="prev()" id="previousBtn" style="cursor: pointer">&laquo;</a>
+                <a id="padination_text">1</a>
+                <a onclick="next()" id="nextBtn" style="cursor: pointer;">&raquo;</a>
+            </div>
+        </div>
+    </div>
+     <div class="gray-container"> 
+        <button onclick="startProgram()" class="sbtn" id="rnd-btn">Random Beer</button>
+        <div class="crd-container" id="container-id">
+            
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <a href="index.html">
+                    <img src="logi.jpg" alt="logo" class="logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
